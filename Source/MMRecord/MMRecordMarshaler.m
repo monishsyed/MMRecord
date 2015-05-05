@@ -71,7 +71,7 @@
         onRecord:(MMRecord *)record
        attribute:(NSAttributeDescription *)attribute
    dateFormatter:(NSDateFormatter *)dateFormatter {
-    if (value == nil) {
+    if (value == nil || value == [NSNull null]) {
         return;
     }
     
